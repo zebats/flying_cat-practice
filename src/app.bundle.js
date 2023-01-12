@@ -236,6 +236,7 @@ Shuang.resource.dict.list = Object.keys(Shuang.resource.dict)
  */
 
 Shuang.resource.schemeList = {
+  feimao: '飞猫双拼',
   ziranma: '自然码',
   sougou: '搜狗双拼',
   weiruan: '微软双拼',

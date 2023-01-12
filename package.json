@@ -37,12 +37,11 @@
     "@babel/cli": "latest",
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
+    "archiver": "latest",
     "babel-preset-minify": "latest",
     "clean-css-cli": "latest",
+    "fs-extra": "^11.1.0",
     "html-minifier": "latest",
-    "fs-extra": "latest",
-    "serve": "latest",
-    "archiver": "latest"
-  },
-  "dependencies": {}
+    "serve": "latest"
+  }
 }
