@@ -1,7 +1,9 @@
-Shuang | 双拼练习
+飞猫双拼方案练习
 ----
 
-v5.16 2022.3.2 更新
+修改自[https://github.com/BlueSky-07/Shuang](https://github.com/BlueSky-07/Shuang)，可能改得不太好，由于本作者很菜所以凑合着用吧
+
+关于什么是飞猫双拼：[https://tieba.baidu.com/p/4676554242?pn=1](https://tieba.baidu.com/p/4676554242?pn=1)(这都不知道的话还来看这个项目干什么？)
 
 ### 许可
 
@@ -9,7 +11,7 @@ v5.16 2022.3.2 更新
 
 ### 开始使用
 
-单字练习：[https://api.ihint.me/shuang](https://api.ihint.me/shuang)
+单字练习：[https://zebats.github.io/flying_cat-practice/](https://zebats.github.io/flying_cat-practice/)
 
 文章练习：[https://api.ihint.me/zi](https://api.ihint.me/zi)
 
@@ -17,11 +19,11 @@ v5.16 2022.3.2 更新
 
 1. 支持的双拼方案：
 
-    > 常见【常用输入法内置】：自然码 / 搜狗双拼 / 微软双拼 / 小鹤双拼 / 智能 ABC / 拼音加加 / 紫光双拼
+    > 常见【常用输入法内置】：(删了)
     >
-    > 小众【常用输入法几乎不内置】：国标双拼 / 小浪双拼 / 大牛双拼
+    > 小众【常用输入法几乎不内置】：(删了)
     >
-    > 爱好者【常用输入法不内置】：键道双拼 3 / 键道双拼 6 / 星空双拼 / 开源小鹳 / 小月双拼 / 韵标块拼 / C 双拼
+    > 爱好者【常用输入法不内置】：飞猫双拼(其它的都删了)
 
 2. 出题模式说明：
 
@@ -63,75 +65,18 @@ v5.16 2022.3.2 更新
 
 ### 添加自定义双拼方案
 
-参见其他已有方案自行增加、修改文件即可
+这个Repository已经被我改烂了，具体去源项目看[https://github.com/BlueSky-07/Shuang](https://github.com/BlueSky-07/Shuang)
 
 ### 开发流程
 
-1. 修改 [src/*.js](src) 下的源码，如果有键位图的更新记得更新 [键位图](resources/双拼键位图.xlsx)，并导出到 [img/](img) 下
-2. 运行 `npm run debug` 来调试
-3. 运行 `npm run build` 来打包
-4. 提交代码
+这个Repository已经被我改烂了，具体去源项目看[https://github.com/BlueSky-07/Shuang](https://github.com/BlueSky-07/Shuang)
 
 ### 联系
 
-如果有疑问 / 建议，或发现了错误，请在 Issues 中留言，也可与我邮件联系：[admin@ihint.me](mailto:admin@ihint.me)
-
-更多介绍：[https://sspai.com/post/40185](https://sspai.com/post/40185)
+如果有疑问 / 建议，或发现了错误，请在 Issues 中留言
 
 ### 键位图
 
 1. [resources/双拼键位图.xlsx](resources/双拼键位图.xlsx) ：可编辑的 Excel 键位图表格
 
-2. [img/*.png](img)：从上述表格中导出的 png 图片
-
-3. 也可在此查看包含 Dvorak 键盘布局的键位图：[https://api.ihint.me/keyboard](https://api.ihint.me/keyboard)
-
-*Web 版键位图如果不能正常显示（如内容排版错乱或重叠），请尝试更新使用最新版 [Chrome 浏览器](https://www.google.cn/chrome)，或换用更高分辨率的屏幕*
-
-### 微信小程序版
-
-可以使用微信扫描下面的二维码，或在微信小程序中搜索 **双拼练习** 即可添加。
-
-关于小程序的更多介绍：[https://sspai.com/post/40624](https://sspai.com/post/40624)
-
-![小程序二维码](assets/mini-program-qrcode.jpg)
-
-### 在 macOS 设备上使用常见方案的原生双拼
-
-使用 macOS 的用户可以通过在终端中运行以下命令，将原生双拼输入法设置成一些可能未被开放的常见方案
-
-* 以下仅在 macOS 10.13.6 上测试
-
-![macOS设置说明](assets/setting-on-macos-instruction.png)
-
-0. 全拼：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 0`
-
-1. 智能 ABC：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 1`
-
-2. 微软双拼：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 2`
-
-3. 紫光双拼：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 3`
-
-4. 小鹤双拼：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 4`
-
-5. 自然码：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 5`
-
-6. 拼音加加：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 6`
-
-7. 搜狗双拼：`defaults write com.apple.inputmethod.CoreChineseEngineFramework shuangpinLayout 7`
-
-### 在 iOS 设备上使用常见方案的原生双拼
-
-* 以下仅在 iOS 13.4.1（越狱） & iOS 13.5（非越狱） 上测试
-
-修改 `/var/mobile/Library/Preferences/com.apple.InputModePreferences.plist` 的 `ShuangpinType` 值即可
-
-具体请阅读 [https://sspai.com/post/60751](https://sspai.com/post/60751)
-
-效果：
-
-![iOS原生自然码](assets/iOS-ziranma.jpeg)
-
-外接键盘下同样生效：
-
-![iOS原生自然码+外接键盘](assets/iOS-ziranma.gif)
+2. [img/*.png](img)：从上述表格中导出的 png 图片(实际上因为导不出和源项目一样的效果所以用Ps自己P了一个)
