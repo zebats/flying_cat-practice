@@ -32,11 +32,6 @@ Shuang.app.action = {
         .map(scheme => scheme.slice(0, -2))
     }
     const schemeOptions = [
-      { disabled: true, text: '常见' },
-      ...schemes.common,
-      { disabled: true, text: '小众' },
-      ...schemes.uncommon,
-      { disabled: true, text: '爱好者' },
       ...schemes.rare,
     ]
 

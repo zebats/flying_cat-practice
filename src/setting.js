@@ -185,7 +185,7 @@ Shuang.app.setting = {
       }
     }
     // $('#pic').setAttribute('src', `img/${this.config.scheme}.png`)
-    $('#pic').setAttribute('src', `img/${this.config.scheme}.svg`)
+    $('#pic').setAttribute('src', `img/${this.config.scheme}.png`)
   }
 }
 
